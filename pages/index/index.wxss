@@ -22,7 +22,7 @@
 
 .userinfo-zone {
 	color:#00cd00;
-	margin:10px;
-	padding:5px;
-	border:1px dashed #f00;
+	margin:10rpx;
+	padding:5rpx;
+	border:1rpx dashed #f00;
 }

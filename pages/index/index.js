@@ -12,6 +12,11 @@ Page({
       url: '../logs/logs'
     })
   },
+  miaoInfo: function(){
+    wx.navigateTo({
+      url: '../miao/miao'
+    })
+  },
   onLoad: function () {
     console.log('onLoad')
     var that = this

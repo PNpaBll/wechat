@@ -8,3 +8,9 @@
   padding: 200rpx 0;
   box-sizing: border-box;
 } 
+
+/**my add css**/
+.goto {
+	color: #00cd00;
+	margin-top: 50rpx;
+}

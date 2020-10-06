@@ -1,0 +1,14 @@
+<!--miao.wxml-->
+
+<view class="container">
+
+	<view>
+		<text>{{miao.name}}</text>
+	</view>
+	<view>
+		<text>{{miao.age}}</text>
+	</view>
+
+	<view class="goto" bindtap="goIndex"> → index页面</view>
+
+</view>
