@@ -1,9 +1,10 @@
 {
   "pages":[
-    "pages/logs/logs",
     "pages/rose/rose",
-
     "pages/miao/miao",
+    "pages/logs/logs",
+
+
     "pages/index/index",
     "pages/xiao/xiao"
   ],
@@ -15,8 +16,9 @@
   },
   "tabBar":{
     "list":[
-      {"pagePath":"pages/logs/logs", "text":"日志页"},
-      {"pagePath":"pages/rose/rose", "text":"Rose页面"}
+      {"pagePath":"pages/rose/rose", "text":"Rose页面"},
+      {"pagePath":"pages/miao/miao", "text":"喵页面"},
+      {"pagePath":"pages/logs/logs", "text":"日志页"}
     ],
     "selectedColor":"#00cd00",
     "borderStyle":"white",

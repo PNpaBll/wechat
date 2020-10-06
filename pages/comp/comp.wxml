@@ -1,6 +1,5 @@
 <!--miao.wxml-->
 
-
 <view class="container">
 
 	<view>
@@ -11,12 +10,5 @@
 	</view>
 
 	<view class="goto" bindtap="goIndex"> → index页面</view>
-
-<checkbox checked="true">心水喵论</checkbox>
-
-<input placeholder="请输入文字" />
-
-<switch checked="true"/>
-
 
 </view>

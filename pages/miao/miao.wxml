@@ -6,10 +6,20 @@
 		<text>{{miao.name}}</text>
 	</view>
 	<view>
-		<text>{{miao.age}}</text>
+		<text selectable="true">{{miao.age}}：文本可选</text>
 	</view>
 
-	<view class="goto" bindtap="goXiao"> → Xiao页</view>
-	<view class="goto" bindtap="goLogs"> → Logs页</view>
+	<view class="flex-wrap" style="flex-direction:row;">
+		<view class="flex-item bc_green goto" bindtap="goXiao"> → Xiao页</view>
+		<view class="flex-item bc_red goto" bindtap="goLogs"> → Logs页</view>
+	</view>
+
+	<icon type="success" />
+	<icon type="info" size="52"/>
+	<icon type="download" color="#999"/>
 
 </view>
+
+<progress percent="89" show-info="true" active="true" backgroundColor="#f99"/>
+
+<button plain="true" loading="true">按了个钮</button>
