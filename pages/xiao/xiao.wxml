@@ -9,7 +9,6 @@
 		<text>{{miao.age}}</text>
 	</view>
 
-	<view class="goto" bindtap="goXiao"> → Xiao页</view>
-	<view class="goto" bindtap="goLogs"> → Logs页</view>
+	<view class="goto" bindtap="goIndex"> → index页面</view>
 
 </view>

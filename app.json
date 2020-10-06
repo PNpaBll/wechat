@@ -1,13 +1,25 @@
 {
   "pages":[
+    "pages/logs/logs",
+    "pages/rose/rose",
+
     "pages/miao/miao",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/xiao/xiao"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "心水喵论",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "list":[
+      {"pagePath":"pages/logs/logs", "text":"日志页"},
+      {"pagePath":"pages/rose/rose", "text":"Rose页面"}
+    ],
+    "selectedColor":"#00cd00",
+    "borderStyle":"white",
+    "position":"bottom"
   }
 }
