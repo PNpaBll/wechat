@@ -1,0 +1,26 @@
+.flex-wrp{
+  display:flex;
+}
+.flex-item{
+  width: 100%;
+  height: 160rpx;
+  font-size: 26rpx;
+  text-align: center;
+  line-height: 160rpx;
+}
+.flex-item-V{
+  margin: 0 auto;
+  width: 300rpx;
+  height: 200rpx;
+}
+
+
+.first-item{
+	background-color: #00cd00;
+}
+.second-item{
+  background-color: #f99;
+}
+.third-item{
+  background-color: #99f;
+}

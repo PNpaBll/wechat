@@ -14,3 +14,7 @@
 	color: #00cd00;
 	margin-top: 50rpx;
 }
+
+.butter{
+  margin: 10rpx 0rpx;
+}

@@ -1,14 +1,15 @@
 <!--miao.wxml-->
 
-<view class="container">
+<view class="flex-wrp" style="flex-direction:row;">
 
-	<view>
-		<text>{{miao.name}}</text>
-	</view>
-	<view>
-		<text>{{miao.age}}</text>
-	</view>
-
-	<view class="goto" bindtap="goIndex"> → index页面</view>
+	<view class="flex-item first-item">{{imagepath}}</view>
+	<view class="flex-item second-item">{{locationName}}</view>
+	<view class="flex-item third-item">{{address}}</view>
 
 </view>
+
+<button class="butter" bindtap="wxPay" type="primary" >微信支付</button>
+<button class="butter" bindtap="getImage" type="primary" plain="false">访问相册</button>
+<button class="butter" bindtap="getPosition" type="primary" plain="true">获取位置</button>
+<button class="butter" bindtap="choosePosition" type="primary" plain="true">选择位置</button>
+<button class="butter" bindtap="wxPosition" type="primary" plain="true">微信内查看位置</button>

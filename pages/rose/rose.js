@@ -14,5 +14,14 @@ Page({
 		this.setData({
 			miao:{'name':'Rose', 'age':'Beautiful'}
 		})
+	},
+
+	popMsg: function(){
+		wx.showToast({
+		  title: '成功',
+		  icon: 'success',
+		  duration: 2000,
+		  mask: true
+		})
 	}
 })

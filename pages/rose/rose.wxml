@@ -1,22 +1,8 @@
 <!--miao.wxml-->
 
 
-<view class="container">
+<view>
 
-	<view>
-		<text>{{miao.name}}</text>
-	</view>
-	<view>
-		<text>{{miao.age}}</text>
-	</view>
-
-	<view class="goto" bindtap="goIndex"> → index页面</view>
-
-<checkbox checked="true">心水喵论</checkbox>
-
-<input placeholder="请输入文字" />
-
-<switch checked="true"/>
-
+	<button class="butter" bindtap="popMsg" type="primary" plain="false">弹出消息</button>
 
 </view>

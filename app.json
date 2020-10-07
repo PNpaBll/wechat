@@ -1,7 +1,9 @@
 {
   "pages":[
     "pages/rose/rose",
+    "pages/comp/comp",
     "pages/miao/miao",
+
     "pages/logs/logs",
 
 
@@ -17,8 +19,8 @@
   "tabBar":{
     "list":[
       {"pagePath":"pages/rose/rose", "text":"Rose页面"},
-      {"pagePath":"pages/miao/miao", "text":"喵页面"},
-      {"pagePath":"pages/logs/logs", "text":"日志页"}
+      {"pagePath":"pages/comp/comp", "text":"组件界面"},
+      {"pagePath":"pages/miao/miao", "text":"喵页面"}
     ],
     "selectedColor":"#00cd00",
     "borderStyle":"white",
