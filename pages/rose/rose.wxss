@@ -1,0 +1,10 @@
+
+.inputer{
+	border:1rpx solid #999;
+    border-radius: 15rpx;
+}
+
+input {
+    min-height: 100rpx;
+    font-size: 50rpx;
+}

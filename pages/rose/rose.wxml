@@ -3,6 +3,14 @@
 
 <view>
 
+	<button class="butter" bindtap="requestApi" type="primary" plain="false">发起请求</button>
 	<button class="butter" bindtap="popMsg" type="primary" plain="false">弹出消息</button>
+	<button class="butter" bindtap="popScan" type="primary" plain="false">调用扫码</button>
+	<button class="butter" bindtap="popSetting" type="primary" plain="false">唤起设置</button>
+
+	<view class="inputer">
+		<input placeholder="请输入昵称" bindinput="getInputValue" />
+	</view>
+	<text>{{inputValue}}</text>
 
 </view>
