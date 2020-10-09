@@ -7,6 +7,10 @@
 	<button class="butter" bindtap="popMsg" type="primary" plain="false">弹出消息</button>
 	<button class="butter" bindtap="popScan" type="primary" plain="false">调用扫码</button>
 	<button class="butter" bindtap="popSetting" type="primary" plain="false">唤起设置</button>
+	<button class="butter" bindtap="getOsInfo" type="primary" plain="false">获取系统信息</button>
+	<view><text>手机型号：{{phoneModel}}</text></view>
+	<view><text>系统版本：{{systemVersion}}</text></view>
+	<view><text>客户端平台：{{clientPlatform}}</text></view>
 
 	<view class="inputer">
 		<input placeholder="请输入昵称" bindinput="getInputValue" />

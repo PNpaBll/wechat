@@ -4,7 +4,10 @@
 Page({
 	data:{
 		miao: null,
-		inputValue: ''
+		inputValue: '',
+		phoneModel: '',
+		systemVersion: '',
+		clientPlatform: ''
 	},
 
 	onShareAppMessage: function () {
@@ -94,6 +97,22 @@ Page({
 	getInputValue: function( event ){
 		this.setData({
 			inputValue: event.detail.value
+		})
+	},
+
+	getOsInfo: function(){
+		var self = this
+		wx.getSystemInfo({
+			success: function(res) {
+				var model = res.model
+				var system = res.system
+				var platform =  res.platform
+				self.setData({
+					phoneModel: model,
+					systemVersion: system,
+					clientPlatform: platform
+				})
+			}
 		})
 	}
 })
