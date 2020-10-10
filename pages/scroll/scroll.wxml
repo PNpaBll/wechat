@@ -1,0 +1,23 @@
+
+<scroll-view>
+
+    <swiper 
+    	indicator-dots="true"
+    	indicator-active-color="#00cd00"
+    	autoplay="true"
+    >
+    	<swiper-item><view class="scrolling">111给一条河取一个温暖的名字</view></swiper-item>
+    	<swiper-item>
+            <image src="./images/wincat.jpg"></image>
+        </swiper-item>
+    	<swiper-item>
+            <image src="./images/bookcat.jpg"></image>
+        </swiper-item>
+    </swiper>
+
+    <view class="scrolling">你看我时很远，你看云时很近</view>
+    <view class="scrolling">给一条河=河流取一个温暖的名字</view>
+    <view class="scrolling">一身诗意千寻瀑，万古人间四月天</view>
+    <view class="scrolling">等闲变却故人心，却道故人心已变</view>
+
+</scroll-view>
