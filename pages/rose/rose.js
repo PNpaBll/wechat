@@ -1,5 +1,14 @@
 // rose.js
 
+const months = []
+const days = []
+
+for(let i=1; i<=12; i++){
+	months.push(i)
+}
+for(let i=1; i<=31; i++){
+	days.push(i)
+}
 
 Page({
 	data:{
@@ -7,7 +16,12 @@ Page({
 		inputValue: '',
 		phoneModel: '',
 		systemVersion: '',
-		clientPlatform: ''
+		clientPlatform: '',
+		montharr: months,
+		days: days,
+		values: [1,11],
+		mm: 2,
+		dd: 12
 	},
 
 	onShareAppMessage: function () {
@@ -114,5 +128,18 @@ Page({
 				})
 			}
 		})
+	},
+
+	getMonth: function(e){
+
+		const val = e.detail.value
+
+		this.setData({
+			mm: this.data.montharr[val[0]],
+			dd: this.data.days[val[1]]
+		})
 	}
+
+
+
 })

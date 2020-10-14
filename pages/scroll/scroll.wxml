@@ -15,9 +15,26 @@
         </swiper-item>
     </swiper>
 
-    <view class="scrolling">你看我时很远，你看云时很近</view>
-    <view class="scrolling">给一条河=河流取一个温暖的名字</view>
+    <view class="scrolling" style="background:#333">
+        <contact-button size="26" session-from="website" type="default-light">
+        </contact-button>
+    </view>
+    <view class="scrolling">
+        <picker range="{{myarr}}" bindchange="getFootball">
+            <view>{{myarr[ballindex]}}</view>
+        </picker>
+    </view>
+    <view class="scrolling">
+        <picker mode="time" start="12:00" end="24:00" bindchange="getTime">
+            <view>{{mytime}}</view>
+        </picker>
+    </view>
     <view class="scrolling">一身诗意千寻瀑，万古人间四月天</view>
-    <view class="scrolling">等闲变却故人心，却道故人心已变</view>
+    <view class="scrolling">
+        <picker mode="date" start="2017-5-6" end="2018-1-1" bindchange="getDate">
+            {{mydate}}
+        </picker>
+    </view>
+    
 
 </scroll-view>
