@@ -1,9 +1,10 @@
 {
   "pages":[
+    "pages/scroll/scroll",
     "pages/rose/rose",
     "pages/comp/comp",
-    "pages/miao/miao",
 
+    "pages/miao/miao",
     "pages/logs/logs",
 
 
@@ -18,6 +19,7 @@
   },
   "tabBar":{
     "list":[
+      {"pagePath":"pages/scroll/scroll", "text":"滑动"},
       {"pagePath":"pages/rose/rose", "text":"Rose页面"},
       {"pagePath":"pages/comp/comp", "text":"组件界面"},
       {"pagePath":"pages/miao/miao", "text":"喵页面"}

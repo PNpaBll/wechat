@@ -1,5 +1,14 @@
 // rose.js
 
+const months = []
+const days = []
+
+for(let i=1; i<=12; i++){
+	months.push(i)
+}
+for(let i=1; i<=31; i++){
+	days.push(i)
+}
 
 Page({
 	data:{
@@ -8,7 +17,15 @@ Page({
 		phoneModel: '',
 		systemVersion: '',
 		clientPlatform: '',
+<<<<<<< HEAD
 		scanInfo: ''
+=======
+		montharr: months,
+		days: days,
+		values: [1,11],
+		mm: 2,
+		dd: 12
+>>>>>>> 38bdd33128adf693178cde7fd1a67cda5eb5877a
 	},
 
 	onShareAppMessage: function () {
@@ -116,6 +133,7 @@ Page({
 			}
 		})
 	},
+<<<<<<< HEAD
   // 扫码接口
 	scanCode() {
 		wx.scanCode({
@@ -170,4 +188,19 @@ Page({
       success: res => console.log(res)
     })
   }
+=======
+
+	getMonth: function(e){
+
+		const val = e.detail.value
+
+		this.setData({
+			mm: this.data.montharr[val[0]],
+			dd: this.data.days[val[1]]
+		})
+	}
+
+
+
+>>>>>>> 38bdd33128adf693178cde7fd1a67cda5eb5877a
 })
