@@ -8,42 +8,23 @@
 	<button class="butter" bindtap="popScan" type="primary" plain="false">调用扫码</button>
 	<button class="butter" bindtap="popSetting" type="primary" plain="false">唤起设置</button>
 	<button class="butter" bindtap="getOsInfo" type="primary" plain="false">获取系统信息</button>
+	<button class="butter" bindtap="scanCode" type="primary" plain="false">扫码</button>
+  <button class="butter" bindtap="logIn" type="primary" plain="false">登录</button>
+  <button class="butter" bindtap="checkLoginState" type="primary" plain="false">检测登录有效</button>
+  <button class="butter" bindtap="getUserInfo" type="primary" plain="false">获取openid</button>
+  <button class="butter" bindtap="getSettingInfo" type="primary" plain="false">获取授权信息</button>
+  <button class="butter" bindtap="confirmAuth" type="primary" plain="false">授权确认</button>
+  <button class="butter" bindtap="getAddress" type="primary" plain="false">收货地址</button>
+
 	<view><text>手机型号：{{phoneModel}}</text></view>
 	<view><text>系统版本：{{systemVersion}}</text></view>
 	<view><text>客户端平台：{{clientPlatform}}</text></view>
+	<view><text>扫码信息：{{scanInfo}}</text></view>
+  <view><text>登录code：{{loginCode}}</text></view>
 
 	<view class="inputer">
 		<input placeholder="请输入昵称" bindinput="getInputValue" />
 	</view>
-	<view><text>{{inputValue}}</text></view>
-	
-	<view><text>您选的是：{{mm}}月{{dd}}日</text></view>
-
-	<view>
-		<picker-view indicator-style="height: 50px;" 
-			style="width: 100%; height: 300px;" 
-			value="{{values}}" 
-			bindchange="getMonth"
-		>
-			<picker-view-column>
-				<view wx:for="{{montharr}}" 
-					style="line-height: 50px;text-align:center" 
-					wx:key="*this"
-			>
-					{{item}}月
-				</view>
-			</picker-view-column>
-
-			<picker-view-column>
-				<view wx:for="{{days}}" 
-					style="line-height: 50px;text-align:center" 
-					wx:key="*this"
-			>
-					{{item}}日
-				</view>
-			</picker-view-column>
-
-		</picker-view>
-	</view>
+	<text>{{inputValue}}</text>
 
 </view>

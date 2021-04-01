@@ -1,14 +1,5 @@
 // rose.js
 
-const months = []
-const days = []
-
-for(let i=1; i<=12; i++){
-	months.push(i)
-}
-for(let i=1; i<=31; i++){
-	days.push(i)
-}
 
 Page({
 	data:{
@@ -17,11 +8,7 @@ Page({
 		phoneModel: '',
 		systemVersion: '',
 		clientPlatform: '',
-		montharr: months,
-		days: days,
-		values: [1,11],
-		mm: 2,
-		dd: 12
+		scanInfo: ''
 	},
 
 	onShareAppMessage: function () {
@@ -129,17 +116,58 @@ Page({
 			}
 		})
 	},
-
-	getMonth: function(e){
-
-		const val = e.detail.value
-
-		this.setData({
-			mm: this.data.montharr[val[0]],
-			dd: this.data.days[val[1]]
+  // 扫码接口
+	scanCode() {
+		wx.scanCode({
+			success: res => {
+				console.log(res)
+				this.setData({
+					scanInfo: res.result
+				})
+			}
 		})
-	}
-
-
-
+	},
+  // 登录
+  logIn() {
+    wx.login({
+      success: res => {
+        console.log(res)
+        this.setData({
+          loginCode: res.code
+        })
+      }
+    })
+  },
+  checkLoginState() {
+  	wx.checkSession({
+  		success: () => console.log('已登陆'),
+  		fail: () => console.log('登录过期，请重新登录')
+  	})
+  },
+  getUserInfo() {
+  	const appid = 'wxcb768188954f4f5f'
+  	const secret = '4007fe3b6e64072d703219ea8ef42f54'
+  	const code = '021bOwLy17xKCe0ZfnKy1qPcLy1bOwLu'
+  	const url = 'https://api.weixin.qq.com/sns/jscode2session?appid='+ appid +'&secret='+ secret +'&js_code='+ code +'&grant_type=authorization_code'
+  	console.log(url)
+  },
+  getSettingInfo() {
+    wx.getSetting({
+      success: res => {
+        console.log(res)
+      }
+    })
+  },
+  confirmAuth() {
+    wx.authorize({
+      scope: 'scope.userinfo',
+      success: () => console.log('同意授权'),
+      fail: () => console.log('拒绝授权')
+    })
+  },
+  getAddress() {
+    wx.chooseAddress({
+      success: res => console.log(res)
+    })
+  }
 })
